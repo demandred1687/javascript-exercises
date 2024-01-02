@@ -1,17 +1,30 @@
-const add = function() {
-	
+const add = function(...args) {
+  let sum = 0;
+	for (let i = 0; i<args.length; i++) {
+  sum+=args[i];
+  }
+  return sum;
 };
 
-const subtract = function() {
-	
+const subtract = function(x,y) {
+	x-=y;
+  return x;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+  let sum = 0;
+	for (let i = 0; i<arr.length; i++) {
+  sum+=arr[i];
+  }
+  return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+let total = 1;
+for (let i = 0; i < arr.length; ++i) {
+ total *= arr[i];
+}
+return total;
 };
 
 const power = function() {
