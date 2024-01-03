@@ -27,8 +27,12 @@ for (let i = 0; i < arr.length; ++i) {
 return total;
 };
 
-const power = function() {
-	
+const power = function(x,y) {
+	let total = x;
+  for (let i = y; i > 1; i--) {
+    total*=x;
+  }
+  return total;
 };
 
 const factorial = function(x) {
