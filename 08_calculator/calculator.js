@@ -33,10 +33,10 @@ const power = function() {
 
 const factorial = function(x) {
 let total = x;
-for (let i = x; i > 1; --i) {
+for (let i = x; i > 1; i--) {
 total *= (i-1);
 }
-return total;
+return total == 0 ? 1 : total;
 };
 
 // Do not edit below this line
