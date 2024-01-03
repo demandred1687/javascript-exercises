@@ -31,8 +31,12 @@ const power = function() {
 	
 };
 
-const factorial = function() {
-	
+const factorial = function(x) {
+let total = x;
+for (let i = x; i > 1; --i) {
+total *= (i-1);
+}
+return total;
 };
 
 // Do not edit below this line
